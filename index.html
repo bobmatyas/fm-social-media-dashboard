@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Social Media Dashboard | Frontend Mentor</title>
+  <script>
+    // If `prefers-color-scheme` is not supported, fall back to light mode.
+    // In this case, light.css will be downloaded with `highest` priority.
+    if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+      document.documentElement.style.display = 'none';
+      document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href="/light.css" onload="document.documentElement.style.display = \'\'">'
+      );
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" id="dark" href="dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" type="text/css" id="light" href="light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+  <header class="header">
+    <div>
+  <h1 class="header__heading">Social Media Dashboard</h1>
+  <p class="header__followers">Total Followers: 23,004</p>
+</div>
+<div>
+  <ul class="dark__toggle">
+    <li class="dark__toggle__item"><label for="darkToggle">Dark Mode</label></li>
+    <li>
+      <input type="checkbox" name="darkToggle" id="darkToggle">
+    </li>
+  </ul>
+</div>
+
+</header>
+
+<main>
+
+<div class="top">
+  <div class="socialcard socialcard__facebook">
+    <div class="socialcard__header">
+      <img src="images/icon-facebook.svg" class="socialcard__header__icon" alt="Facebook Icon">
+      <p class="socialcard__header__text">@nathanf</p>
+    </div>
+
+    <div class="socialcard__followers__count">
+      1987
+    </div>
+    <div class="socialcard__followers__heading">
+      Followers
+    </div>
+    <div class="socialcard__today">
+      <img src="images/icon-up.svg" class="socialcard__today__icon"  alt="Up Arrow Icon"> 12 Today
+    </div>
+</div>
+
+<div class="socialcard socialcard__twitter">
+  <div class="socialcard__header">
+    <img src="images/icon-twitter.svg" class="socialcard__header__icon" alt="Twitter Icon">
+    <p class="socialcard__header__text">@nathanf</p>
+  </div>
+      <div class="socialcard__followers__count">
+      1044
+      </div>
+      <div class="socialcard__followers__heading">
+      Followers
+      </div>
+  <div class="socialcard__today">
+    <img src="images/icon-up.svg" class="socialcard__today__icon"  alt="Up Arrow Icon">   99 Today
+  </div>
+</div>
+
+<div style="border-radius: 5px;">
+<div class="socialcard socialcard__instagram">
+  <div class="socialcard__header">
+  <img src="images/icon-instagram.svg" class="socialcard__header__icon" alt="Instagram Icon">
+  <p class="socialcard__header__text">  @realnathanf</p>
+  </div>
+  <div class="socialcard__followers__count">
+  11k
+  </div>
+  <div class="socialcard__followers__heading">
+  Followers
+  </div>
+  <div class="socialcard__today">
+    <img src="images/icon-up.svg" class="socialcard__today__icon"  alt="Up Arrow Icon"> 1099 Today
+  </div>
+</div>
+</div>
+
+<div class="socialcard socialcard__youtube">
+  <div class="socialcard__header">
+  <img src="images/icon-youtube.svg" class="socialcard__header__icon" alt="YouTube Icon">
+  <p class="socialcard__header__text">  Nathan F.</p>
+</div>
+<div class="socialcard__followers__count">
+  8239
+  </div>
+  <div class="socialcard__followers__heading">
+  Subscribers
+  </div>
+  <div class="socialcard__today socialcard__today--red">
+    <img src="images/icon-down.svg" class="socialcard__today__icon" alt="Up Arrow Icon">   144 Today
+  </div>
+</div>
+
+</div>
+
+  <h2 class="overview">Overview - Today</h2>
+
+<div class="stats">
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Page Views</p>  <img src="images/icon-facebook.svg" class="statscard__header__icon" alt="Facebook Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">87</p> <p class="statscard__stats__trend statscard__stats__trend--up"><img src="images/icon-up.svg" class="statscard__stats_trend__icon" alt="Up Arrow Icon"> 3%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Likes</p>  <img src="images/icon-facebook.svg" class="statscard__header__icon" alt="Facebook Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">52</p> <p class="statscard__stats__trend statscard__stats__trend--down"><img src="images/icon-down.svg" class="statscard__stats_trend__icon" alt="Down Arrow Icon"> 2%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Likes</p>  <img src="images/icon-instagram.svg" class="statscard__header__icon" alt="Instagram Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">5462</p> <p class="statscard__stats__trend statscard__stats__trend--up"><img src="images/icon-up.svg" class="statscard__stats_trend__icon" alt="Up Arrow Icon"> 2257%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Profile Views</p>  <img src="images/icon-instagram.svg" class="statscard__header__icon" alt="Instagram Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">52k</p> <p class="statscard__stats__trend statscard__stats__trend--up"><img src="images/icon-up.svg" class="statscard__stats_trend__icon" alt="Up Arrow Icon"> 1375%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Retweets</p>  <img src="images/icon-twitter.svg" class="statscard__header__icon" alt="Twitter Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">117</p> <p class="statscard__stats__trend"><img src="images/icon-up.svg" class="statscard__stats_trend__icon" alt="Up Arrow Icon"> 303%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Likes</p>  <img src="images/icon-twitter.svg" class="statscard__header__icon" alt="Twitter Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">507</p> <p class="statscard__stats__trend statscard__stats__trend--up"><img src="images/icon-up.svg" class="statscard__stats_trend__icon" alt="Up Arrow Icon"> 553%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Likes</p>  <img src="images/icon-youtube.svg" class="statscard__header__icon" alt="YouTube Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">107</p> <p class="statscard__stats__trend statscard__stats__trend--down"><img src="images/icon-down.svg" class="statscard__stats_trend__icon" alt="Down Arrow Icon"> 19%</p>
+    </div>
+  </div>
+
+  <div class="statscard">
+    <div class="statscard__header">
+      <p class="statscard__header__views">Total Views</p>  <img src="images/icon-youtube.svg" class="statscard__header__icon" alt="YouTube Icon">
+    </div>
+    <div class="statscard__stats">
+      <p class="statscard__stats__count">1407</p> <p class="statscard__stats__trend statscard__stats__trend--down"><img src="images/icon-down.svg" class="statscard__stats_trend__icon" alt="Down Arrow Icon"> 12%</p>
+    </div>
+  </div>
+
+</div>
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.bobmatyas.com">Bob Matyas</a>.
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

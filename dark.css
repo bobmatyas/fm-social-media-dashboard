@@ -1,0 +1,12 @@
+:root {
+    --color: hsl(0, 0%, 100%);
+    --background-pattern: hsl(232, 19%, 15%);
+    --background-color: hsl(230, 17%, 14%);
+    --card-bg: hsl(228, 28%, 20%);
+    --card-bg-hover: #333a56;
+    --color-knob: #303c52;
+    --mobile-toggle-border: #37394e;
+    --socialcard-header-text: hsl(228, 34%, 66%);
+    --socialcard-accent-text: hsl(163, 72%, 41%);
+    --statscard-trend-down: hsl(356, 69%, 56%); 
+}
