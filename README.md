@@ -1,5 +1,16 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
+My social for the Frontend Mentor Social Media Dashboard challenge.
+
+I built it using CSS Grid and Custom properties. It makes use of the new-ish `prefers-color-scheme` to help with toggling between light and dark mode.
+
+You can view it in the browser at:
+
+[https://bobmatyas.github.io/fm-social-media-dashboard/](https://bobmatyas.github.io/fm-social-media-dashboard/)
+
+
+## Preview
+
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
